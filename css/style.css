@@ -137,13 +137,12 @@ a{
 
     /* plans row & column */
 .plans-row{
-    padding: 50px 0;
+    margin: 50px 0px;
     gap: 50px;
 }
 .plan-col{
     border: 1px solid var(--border-color-gray)
     ;
-    min-height: 1000px;
 }
 .plan-col i{
     margin-right: 5px;
@@ -156,15 +155,15 @@ a{
 }
 
 .col-desc{
-    padding: 50px 35px;
+    padding: 30px;
 }
 
 .col-main{
+    flex-basis: 60%;
     position: relative;
-    padding-bottom: 40px;
 }
 
-.col-main:after{
+.col-main.top:after{
     content: "";
     position: absolute;
     left: 0;
@@ -172,6 +171,9 @@ a{
     height: 1px;
     width: 20%;
     background-color: var(--border-color-gray);
+}
+.col-main p{
+    padding-top: 30px;
 }
 
 .plan-title{
@@ -194,6 +196,12 @@ a{
     padding: 20px 0px;
 }
 
+.col-btn{
+    flex-basis: 40%;
+}
+.col-btn:last-child{
+    padding-bottom: 40px;
+}
 .free-try{
     width: 100%;
     display: inline-block;
