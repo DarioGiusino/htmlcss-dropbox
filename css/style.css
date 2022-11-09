@@ -256,3 +256,15 @@ section{
     border: 1px solid #000;
     display: inline-block;
 }
+
+/* operation section */
+.operation-row{
+    gap: 30px;
+}
+.operation-col{
+    flex-basis: calc(100% / 3);
+}
+.operation-img img{
+    display: block;
+    max-width: 100%;
+}
