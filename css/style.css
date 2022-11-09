@@ -10,10 +10,14 @@ body{
     font-family: 'Open Sans', sans-serif;
     padding-top: 80px;
 }
+:root{
+    --btn-color-blue: #0061ff;
+    --border-color-gray: #d0d0d3;
+}
 
 /* utils */
 .smallcontainer{
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .bigcontainer{
@@ -34,6 +38,12 @@ a{
     text-decoration: none;
 }
 
+.main-title{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-size: 45px;
+}
+
 /* header */
 .fixed-header{
     background-color: #fff;
@@ -45,6 +55,7 @@ a{
     top: 0;
     right: 0;
     width: 100%;
+    z-index: 2;
 }
 .fixed-header *{
     padding: 0 10px;
@@ -58,7 +69,7 @@ a{
 .btn-header{
     padding: 8px 15px;
     color: #fff;
-    background-color: #0061ff;
+    background-color: var(--btn-color-blue);
 }
 
 /* jumbotron */
@@ -68,6 +79,7 @@ a{
 .jumbo-content{
     position: relative;
     height: 800px;
+    margin-bottom: 100px;
 }
 
 .jumbo-title{
@@ -103,4 +115,103 @@ a{
 .jumbo-img img{
     display: block;
     max-width: 100%;
+}
+
+/* plans section */
+    /* billing buttons */
+.billing{
+    gap: 5px;
+}
+.billing-btn{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.monthly.billing-btn{
+    border: 5px solid var(--btn-color-blue);
+}
+.annual.billing-btn{
+    margin-left: 40px;
+    border: 2px solid var(--border-color-gray);
+}
+
+    /* plans row & column */
+.plans-row{
+    padding: 50px 0;
+    gap: 50px;
+}
+.plan-col{
+    border: 1px solid var(--border-color-gray)
+    ;
+    min-height: 1000px;
+}
+.plan-col i{
+    margin-right: 5px;
+}
+
+.col-header{
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--border-color-gray);
+}
+
+.col-desc{
+    padding: 50px 35px;
+}
+
+.col-main{
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.col-main:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 20%;
+    background-color: var(--border-color-gray);
+}
+
+.plan-title{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.plan-price{
+    font-weight: bold;
+}
+.plan-freq{
+    color: #666;
+    padding-top: 5px;
+}
+
+.plan-feature{
+    padding: 50px 0px;
+}
+.plan-storage{
+    padding: 20px 0px;
+}
+
+.free-try{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.buy-now{
+    color: #00f;
+    text-decoration: underline;
+}
+
+.plan-highlights-title{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.highlights-list li{
+    padding-bottom: 15px;
+}
+.fa-check{
+    color: var(--btn-color-blue);
 }
