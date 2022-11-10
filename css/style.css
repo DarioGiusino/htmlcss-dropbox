@@ -243,12 +243,10 @@ a{
 .partner-img{
     flex: 0 0 60%;
 }
-
 .partner-text{
     padding: 40px;
     flex: 0 0 40%;
 }
-
 .partner-btn{
     border: 1px solid #000;
 }
@@ -259,4 +257,24 @@ a{
 }
 .operation-col{
     flex-basis: calc(100% / 3);
+}
+
+/* brand section */
+.brands-content > div{
+    flex-basis: calc(100% / 3);
+}
+.lateral-brands{
+    flex-wrap: wrap;
+}
+.brand{
+    position: relative;
+    flex-basis: 50%;
+    height: 382px;
+}
+
+.brand img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(0.5);
 }
