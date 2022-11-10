@@ -209,6 +209,10 @@ h1.jumbo-title{
     margin: 50px 0px;
 }
 
+.jumbo-text a:last-child:hover{
+    animation: bouncing 1s infinite alternate;
+}
+
 /* plans section */
     /* billing buttons */
 .billing-btn{
@@ -423,4 +427,14 @@ footer{
 }
 .qa-question:hover i{
     transform: rotate(180deg);
+}
+
+/* animations */
+@keyframes bouncing{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-20px);
+    }
 }
