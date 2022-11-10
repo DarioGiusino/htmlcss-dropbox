@@ -18,9 +18,13 @@
 <body>
     <!-- header & jambotron -->
     <header class="fixed-header flex">
-        <div class="right-header flex">
-            <img class="logo-header" src="img/logo-small.png" alt="dropbox logo">
+        <div class="right-header">
             <ul class="navbar-header flex">
+                <li>
+                    <a href="#">
+                    <img class="logo-header" src="img/logo-small.png" alt="dropbox logo">
+                    </a>
+                </li>
                 <li><a href="#">Perchè Dropbox</a></li>
                 <li><a href="#">Funzioni</a></li>
                 <li><a href="#">Piani e Prezzi</a></li>
@@ -31,22 +35,22 @@
                 <li><a href="#">Supporto</a></li>
                 <li><a href="#">Contatta l'ufficio vendite</a></li>
                 <li><a href="#">Accedi</a></li>
-                <li><a class="btn-header" href="#">Inizia</a></li>
+                <li><a class="default-btn blue-btn" href="#">Inizia</a></li>
             </ul>
         </div>
     </header>
-    <!-- jumbotron -->
-    <div class="jumbotron">
+    <!-- main -->
+    <main>
+        <!-- jumbotron -->
+        <section class="jumbotron">
         <div class="jumbo-content bigcontainer">
             <h1 class="jumbo-title">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
             <div class="jumbo-desc flex">
                 <div class="jumbo-text">
                     <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente
                     </p>
-                    <ul>
-                        <li><a class="btn-header" href="#">Inizia la tua prova gratuita</a></li>
-                        <li><a href="#">Annulla in qualsiasi momento</a></li>
-                    </ul>
+                    <a class="default-btn blue-btn" href="#">Inizia la tua prova gratuita</a>
+                    <p>Annulla in qualsiasi momento</p>
                     <a href="#"><i class="fa-solid fa-arrow-down"></i></a>
                 </div>
                 <div class="jumbo-img">
@@ -54,11 +58,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- main -->
-    <main>
-        <!-- business plans -->
-        <section class="plans-content smallcontainer">
+        </section>
+        <!-- plans section -->
+        <section class="plans-content h-padding smallcontainer">
             <h2 class="main-title">Trova il piano business che fa per te</h2>
             <div class="billing flex">
                 <div class="monthly billing-btn"></div><span>Fatturazione mensile</span>
@@ -82,8 +84,8 @@
                                 <div class="plan-functions"><i class="fa-solid fa-share-nodes"></i></i>Funzioni di produttività premium e condivisione file semplice e sicura</div>
                             </div>
                             <div class="col-btn">
-                                <a class="btn-header free-try" href="#">Prova gratis per 30 giorni</a>
-                                <div>oppure <a class="buy-now" href="#">acquista ora</a></div>
+                                <a class="default-btn blue-btn long-btn" href="#">Prova gratis per 30 giorni</a>
+                                <div>oppure <a class="standard-btn" href="#">acquista ora</a></div>
                             </div>  
                         </div>
                         <div class="col-footer">
@@ -112,8 +114,8 @@
                                 <div class="plan-functions"><i class="fa-solid fa-share-nodes"></i></i>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</div>
                             </div>
                             <div class="col-btn">
-                                <a class="btn-header free-try" href="#">Prova gratis per 30 giorni</a>
-                                <div>oppure <a class="buy-now" href="#">acquista ora</a></div>
+                                <a class="default-btn blue-btn long-btn" href="#">Prova gratis per 30 giorni</a>
+                                <div>oppure <a class="standard-btn" href="#">acquista ora</a></div>
                             </div>  
                         </div>
                         <div class="col-footer">
@@ -145,8 +147,8 @@
                                 <div class="plan-functions"><i class="fa-solid fa-share-nodes"></i></i>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</div>
                             </div>
                             <div class="col-btn">
-                                <a class="btn-header free-try" href="#">Contattaci</a>
-                                <div>oppure <a class="buy-now" href="#">acquista ora</a></div>
+                                <a class="default-btn blue-btn long-btn" href="#">Contattaci</a>
+                                <div>oppure <a class="standard-btn" href="#">acquista ora</a></div>
                             </div>  
                         </div>
                         <div class="col-footer">
@@ -174,25 +176,25 @@
                             <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</p>
                         </div>
                          <div class="col-btn">
-                            <a class="btn-header free-try" href="#">Contatta l'ufficio vendite</a>
+                            <a class="default-btn blue-btn long-btn" href="#">Contatta l'ufficio vendite</a>
                         </div>  
                     </div>
                 </div>
             </div>
         </section>
         <!-- partner section -->
-        <section class="partner-content smallcontainer flex">
+        <section class="partner-content h-padding smallcontainer flex">
             <div class="partner-img">
                 <img src="img/partner.png" alt="partner image">
             </div>
             <div class="partner-text">
                 <h3 class="small-title">Entra in contatto con un partner Dropbox</h3>
                 <p class="desc-paragraph">Trova un partner Dropbox e HelloSign di fiducia. ottieni le soluzioni e i servizi neceessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
-                <a class="btn-header partner" href="#">Trova un partner</a>
+                <a class="default-btn white-btn partner-btn" href="#">Trova un partner</a>
             </div>
         </section>
         <!-- operation section -->
-        <section class="operation-content smallcontainer">
+        <section class="operation-content h-padding smallcontainer">
             <h2 class="main-title">Esegui più operazioni con Dropbox Business</h2>
             <div class="operation-row flex">
                 <div class="operation-col">
@@ -254,9 +256,9 @@
             </div>
         </section>
         <!-- count section -->
-        <section class="count smallcontainer">
+        <section class="count h-padding smallcontainer">
             <h2 class="main-title">Più di 500.000 team utilizzano Dropbox Business</h2>
-            <a class="buy-now" href="#">Scopri di più sui nostri clienti</a>
+            <a class="standard-btn" href="#">Scopri di più sui nostri clienti</a>
         </section>
     </main>
 </body>

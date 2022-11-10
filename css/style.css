@@ -38,17 +38,45 @@ li{
     list-style-type: none;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+}
+
 a{
+    color: #000;
+    display: inline-block;
     text-decoration: none;
 }
 
-section{
+.default-btn{
+    padding: 8px 15px;
+}
+.blue-btn{
+    color: #fff;
+    background-color: var(--btn-color-blue);
+}
+.white-btn{
+    color: #000;
+    background-color: #fff;
+}
+.long-btn{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.standard-btn{
+    color: #00f;
+    text-decoration: underline;
+}
+
+.h-padding{
     padding: 80px 0px;
 }
 
 .main-title{
     padding-bottom: 50px;
-    font-size: 55px;
+    font-size: 51px;
 }
 
 .small-title{
@@ -74,19 +102,11 @@ section{
     width: 100%;
     z-index: 2;
 }
-.fixed-header *{
-    padding: 0 10px;
-    color: #000;
+.fixed-header li{
+    padding: 0 20px;
 }
-
-.logo-header{
-    display: block;
-    max-width: 100%;
-}
-.btn-header{
-    padding: 8px 15px;
-    color: #fff;
-    background-color: var(--btn-color-blue);
+.navbar-header{
+    align-items: center;
 }
 
 /* jumbotron */
@@ -112,11 +132,8 @@ section{
 .jumbo-text p{
     font-size: 19px;
 }
-.jumbo-text li{
-    margin-top: 50px;
-}
-.jumbo-text li:last-child a{
-    color: #000;
+.jumbo-text a{
+    margin: 50px 0px;
 }
 .jumbo-text .fa-arrow-down{
     color: #000;
@@ -128,10 +145,6 @@ section{
 
 .jumbo-img{
     flex: 0 0 70%;
-}
-.jumbo-img img{
-    display: block;
-    max-width: 100%;
 }
 
 /* plans section */
@@ -214,16 +227,6 @@ section{
 .col-btn:last-child{
     padding-bottom: 40px;
 }
-.free-try{
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.buy-now{
-    color: #00f;
-    text-decoration: underline;
-}
 
 .plan-highlights-title{
     padding-top: 40px;
@@ -240,21 +243,14 @@ section{
 .partner-img{
     flex: 0 0 60%;
 }
-.partner-img img{
-    display: block;
-    max-width: 100%;
-}
 
 .partner-text{
     padding: 40px;
     flex: 0 0 40%;
 }
 
-.btn-header.partner{
-    color: #000;
-    background-color: #fff;
+.partner-btn{
     border: 1px solid #000;
-    display: inline-block;
 }
 
 /* operation section */
@@ -263,8 +259,4 @@ section{
 }
 .operation-col{
     flex-basis: calc(100% / 3);
-}
-.operation-img img{
-    display: block;
-    max-width: 100%;
 }
