@@ -91,6 +91,9 @@ i{
 .default-btn{
     padding: 8px 15px;
 }
+.default-btn:hover{
+    opacity: 0.8;
+}
 .blue-btn{
     color: #fff;
     background-color: var(--btn-color-blue);
@@ -298,6 +301,9 @@ h1.jumbo-title{
     flex-basis: 50%;
     height: 382px;
 }
+.brand:active{
+    border: 20px solid rgba(255,255,255,0.2);
+}
 .brand img{
     filter: invert(1);
     position: absolute;
@@ -373,7 +379,10 @@ footer{
 }
 
 .footer-list a{
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.footer-list a:hover{
+    text-decoration: underline;
 }
 
     /* footer-bottom */
