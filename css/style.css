@@ -54,6 +54,7 @@ i{
 .flex{
     display: flex;
 }
+
 .fb-30{
     flex-basis: 30%;
 }
@@ -65,6 +66,19 @@ i{
 }
 .fb-60{
     flex-basis: 60%;
+}
+.fb-33{
+    flex-basis: calc(100% / 3);
+}
+
+.g-5{
+    gap: 5px;
+}
+.g-30{
+    gap: 30px;
+}
+.g-50{
+    gap: 50px;
 }
 
     /* buttons */
@@ -187,9 +201,6 @@ i{
 
 /* plans section */
     /* billing buttons */
-.billing{
-    gap: 5px;
-}
 .billing-btn{
     width: 20px;
     height: 20px;
@@ -206,28 +217,27 @@ i{
     /* plans row & column */
 .plans-row{
     margin-top: 50px;
-    gap: 50px;
 }
-.plan-col{
+.plan-card{
     border: 1px solid var(--border-color-gray)
     ;
 }
 
-.col-header{
+.card-header{
     text-align: center;
     padding: 10px 0px;
     border-bottom: 1px solid var(--border-color-gray);
 }
 
-.col-desc{
+.card-desc{
     padding: 30px;
 }
 
-.col-main{
+.card-main{
     position: relative;
 }
 
-.col-main.top:after{
+.card-main.top:after{
     content: "";
     position: absolute;
     left: 0;
@@ -236,7 +246,7 @@ i{
     width: 20%;
     background-color: var(--border-color-gray);
 }
-.col-main p{
+.card-main p{
     padding-top: 30px;
 }
 
@@ -255,7 +265,7 @@ i{
     padding: 20px 0px;
 }
 
-.col-btn:last-child{
+.card-btn:last-child{
     padding-bottom: 40px;
 }
 
@@ -276,14 +286,6 @@ i{
 }
 .partner-btn{
     border: 1px solid #000;
-}
-
-/* operation section */
-.operation-row{
-    gap: 30px;
-}
-.operation-col{
-    flex-basis: calc(100% / 3);
 }
 
 /* brand section */
@@ -397,32 +399,3 @@ footer{
     width: 10%;
     background-color: #fff;
 }
-
-
-
-
-
-
-/* .row{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.row.g-30{
-    gap: 30px;
-}
-
-.row.g-50{
-    gap: 50px;
-}
-
-.col{
-    flex-basis: 33%;
-}
-
-
-#plans .row{
-
-} 
-cambiare nomi col in card (non associare le cose per maggiore flessibilità) + verificare associazione nomi classi funzione/contenuto e aumentare centralizzazione
-*/
