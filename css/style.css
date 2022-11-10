@@ -49,6 +49,7 @@ a{
     text-decoration: none;
 }
 
+    /* buttons */
 .default-btn{
     padding: 8px 15px;
 }
@@ -70,10 +71,12 @@ a{
     text-decoration: underline;
 }
 
+    /* horizontal padding */
 .h-padding{
     padding: 80px 0px;
 }
 
+    /* text formatting */
 .main-title{
     padding-bottom: 50px;
     font-size: 51px;
@@ -87,6 +90,35 @@ a{
 .desc-paragraph{
     font-size: 20px;
     padding: 30px 0px;
+}
+
+    /* bg-colors */
+.bg-grey{
+    background-color: #f5f5f5;
+}
+.bg-green{
+    background-color: #a2d39b;
+}
+.bg-bordeaux{
+    background-color: #61082b;
+}
+.bg-sky{
+    background-color: #0093ce;
+}
+.bg-red{
+    background-color: #ff1c1c;
+}
+.bg-darkred{
+    background-color: #d5001f;
+}
+.bg-lightblue{
+    background-color: #b4d0e7;
+}
+.bg-darkblue{
+    background-color: #0d2481;
+}
+.bg-yellow{
+    background-color: #ffd830;
 }
 
 /* header */
@@ -266,15 +298,71 @@ a{
 .lateral-brands{
     flex-wrap: wrap;
 }
+
 .brand{
     position: relative;
     flex-basis: 50%;
     height: 382px;
 }
-
 .brand img{
+    filter: invert(1);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: scale(0.5);
+    width: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.brand-desc{
+    padding: 50px;
+    position: relative;
+}
+.brand-desc img{
+    margin-bottom: 50px;
+}
+.brand-desc p{
+    padding: 50px 0px;
+}
+.brand-desc address{
+    font-style: normal;
+}
+.brand-desc p:after{
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 227px;
+    height: 1px;
+    width: 20%;
+    background-color: var(--border-color-gray);
+}
+
+
+
+
+
+
+
+
+/* .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.g-30{
+    gap: 30px;
+}
+
+.row.g-50{
+    gap: 50px;
+}
+
+.col{
+    flex-basis: 33%;
+}
+
+
+#plans .row{
+
+} 
+cambiare nomi col in card (non associare le cose per maggiore flessibilità) + verificare associazione nomi classi funzione/contenuto e aumentare centralizzazione
+*/
