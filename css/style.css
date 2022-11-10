@@ -360,6 +360,17 @@ h1.jumbo-title{
     top: 50%;
     left: 400px;
 }
+.qa-question:hover i{
+    transform: rotate(180deg);
+}
+
+.qa-question p{
+    padding-top: 20px;
+    display: none;
+}
+.qa-question:hover p{
+    display: block
+}
 
 /* footeer */
 footer{
@@ -400,4 +411,16 @@ footer{
     height: 1px;
     width: 10%;
     background-color: #fff;
+}
+
+
+.qa-question p{
+    padding-top: 20px;
+    display: none;
+}
+.qa-question:hover p{
+    display: block
+}
+.qa-question:hover i{
+    transform: rotate(180deg);
 }
