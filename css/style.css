@@ -57,6 +57,9 @@ i{
 .wrap{
     flex-wrap: wrap;
 }
+.stretch{
+    align-self: stretch;
+}
 
 .fb-20{
     flex-basis: 20%;
@@ -184,6 +187,20 @@ i{
 .navbar-header{
     align-items: center;
 }
+
+.right-header, .left-header{
+    height: 100%;
+}
+li.stretch > a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+li.stretch:hover{
+    border-bottom: 1px solid black;
+}
+
+
 
 /* main */
     /* jumbotron */
