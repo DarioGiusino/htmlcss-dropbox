@@ -229,7 +229,7 @@ h1.jumbo-title{
 }
 
     /* plans row & column */
-.plans-row{
+.plans-top, .plans-bottom{
     margin-top: 50px;
 }
 .plan-card{
@@ -243,7 +243,7 @@ h1.jumbo-title{
     border-bottom: 1px solid var(--border-color-gray);
 }
 .card-desc{
-    padding: 30px;
+    padding: 30px 50px;
 }
 .card-main{
     position: relative;
@@ -272,6 +272,9 @@ h1.jumbo-title{
 .plan-feature{
     padding: 50px 0px;
 }
+.plan-feature li{
+    display: flex;
+}
 .plan-storage{
     padding: 20px 0px;
 }
@@ -285,6 +288,7 @@ h1.jumbo-title{
     padding-bottom: 20px;
 }
 .highlights-list li{
+    display: flex;
     padding-bottom: 15px;
 }
 .fa-check{
@@ -300,10 +304,13 @@ h1.jumbo-title{
 }
 
 /* brand section */
+.lateral-brands{
+    height: calc(100vw / 3);
+}
 .brand{
     position: relative;
     flex-basis: 50%;
-    height: 382px;
+    height:  calc(100% / 2);
 }
 .brand:active{
     border: 20px solid rgba(255,255,255,0.2);
@@ -359,10 +366,13 @@ h1.jumbo-title{
 .qa-question{
     padding: 40px 0px;
 }
+.qa-header{
+    justify-content: space-between;
+}
 .qa-question i{
     position: relative;
-    top: 50%;
-    left: 400px;
+    top: 0%;
+    right: 50px;
 }
 .qa-question:hover i{
     transform: rotate(180deg);
