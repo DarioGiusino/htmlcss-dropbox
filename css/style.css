@@ -196,7 +196,7 @@ li.stretch > a{
     display: flex;
     align-items: center;
 }
-li.stretch:hover{
+li.stretch > a:hover{
     border-bottom: 1px solid black;
 }
 
